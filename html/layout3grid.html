@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout 03</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing:border-box;
+        }
+        main{
+            width: 1200px;
+            height: 800px;
+            margin: 0 auto;
+            background-color: antiquewhite;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 100px 600px 80px;
+            gap:10px
+        }
+        #logo,footer{
+            background-color: #ccc;
+        }
+        section{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap:10px;
+        }
+        #left{
+            background-color: #5ae97e;
+
+        }
+        #right{
+            display:grid;
+            grid-template-rows: 1fr 2fr;
+            gap:10px;
+        }
+        #header,#area{
+            background-color: rgb(192, 92, 219);
+        }
+    </style>
+</head>
+<body>
+    <main><!--main start -->
+        <div id="logo">
+            <h2>Logo</h2>
+        </div>
+        <section>
+            <div id="left"><h2>Side Bar Navigation</h2></div>
+            <div id="right">
+                <div id="header"><h2>Header/Banner</h2></div>
+                <div id="area"><h2>Body Area</h2></div>
+            </div>
+        </section>
+        <footer>
+            <h3>Last Part</h3>
+        </footer>
+
+    </main>
+    <!-- main end -->
+    
+</body>
+</html>

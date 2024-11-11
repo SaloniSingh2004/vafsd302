@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 04</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        main{
+            width:1200px;
+            height: 800px;
+            margin: 0 auto;
+            background-color: beige;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 3fr 1fr;
+            gap: 10px;
+
+        }
+        #logo{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        #hello,#nav{
+            background-color: cadetblue;
+            text-align: center;
+        }
+        #header{
+            background-color: burlywood;
+            text-align: center;
+        }
+        #intro{
+            background-color: chartreuse;
+            text-align: center;
+        }
+        #boxes{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+        }
+        #box1,#box2,#box3{
+            background-color: darkseagreen;
+            text-align: center;
+        }
+        #footer{
+            background-color: blue;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="logo">
+            <div id="hello">
+            <h2>Logo</h2>
+            </div>
+            <div id="nav">
+                <h2>Navigation</h2>
+            </div>
+
+        </div>
+        <div id="header">
+            <h2>Header</h2>
+        </div>
+        <div id="intro">
+            <h2>Intro</h2>
+        </div>
+        <div id="boxes">
+            <div id="box1">BOX 1</div>
+            <div id="box2">BOX 2</div>
+            <div id="box3">BOX 3</div>
+        </div>
+        <div id="footer">
+            <h2>Footer</h2>
+        </div>
+    </main>
+    
+</body>
+</html>
