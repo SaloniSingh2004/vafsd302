@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Fitness Club</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+<style>
+    body {
+        font-family: 'Sour Gummy', cursive;
+        margin: 0px;
+        padding: 0px;
+        background-image: url(gymgirl2.jpg);
+        color: white;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 60px;
+        top: 10px;
+
+    }
+
+    .left img {
+        width: 135px;
+        filter: invert(white);
+    }
+
+    .left div {
+        text-align: center;
+        line-height: 9px;
+        font-size: 29px;
+
+    }
+
+    .mid {
+        display: block;
+        width: 41%;
+        margin: 20px auto;
+        /* border: 2px solid yellow; */
+
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+        /* border: 2px solid green; */
+
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 30px 20px;
+    }
+
+    .navbar li a:hover{
+        text-decoration: underline;
+        color: rgb(46, 20, 151);
+    }
+
+    .btn {
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        font-family: 'Sour Gummy', cursive;
+    }
+
+    .btn:hover {
+        background-color: rgb(32, 32, 32);
+    }
+
+    .container {
+        /* border: 2px solid white; */
+        margin: 98px 60px;
+        padding: 75px;
+        width: 33%;
+        border-radius: 28px;
+    }
+
+    .form-group input {
+        font-size: 16px;
+        text-align: center;
+        display: block;
+        width: 469px;
+        padding: 10px;
+        border: 2px solid black;
+        margin: 11px auto;
+        border-radius: 23px;
+        font-family: 'Sour Gummy',cursive;
+
+    }
+    .container h1{
+        text-align: center;
+        color: #c167c9;
+    }
+    .container button{
+        display: block;
+        width: 74%;
+        margin: 20px auto;
+    }
+</style>
+
+<body>
+    <header class="header"></header>
+    <!-- Left box for logo -->
+    <div class="left">
+        <img src="logogym1.jpg" alt="">
+        <div>Fitness Club</div>
+    </div>
+    <!-- Mid box for Navigation -->
+    <div class="mid">
+        <ul class="navbar">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Fitness Calculator</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+    <!-- Right box for Buttons -->
+    <div class="right">
+        <button class="btn">Call Us Now</button>
+        <button class="btn">Email Us</button>
+    </div>
+    <div class="container">
+        <h1>Join Our Gym</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="number" name="" placeholder="Enter Your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Locality">
+            </div>
+            <div class="form-group">
+                <input type="email" name="" placeholder="Enter Your Email">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
