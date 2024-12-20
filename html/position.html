@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        nav{
+            width: 100%;
+            height: 100px;
+            background-color: brown;
+            text-align: center;
+            align-content: center;
+            position: fixed;
+            z-index: 1;
+            top:0px;
+            left: 0px;
+            right: 0px;
+        }
+        main{
+            width: 1200px;
+            height:1200px;
+            background-color: antiquewhite;
+            margin: 0 auto;
+            position: relative;
+            top: 80px;
+            z-index: 0;
+
+        }
+        section{
+            width: 500px;
+            height: 100px;
+            background-color: rgb(221, 108, 102);
+            margin: 0 auto;
+            position: sticky;
+            top: 400px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav><h1>NavBar</h1></nav>
+    <main>
+    <div class="b1"><h2>B1</h2></div>
+    <!-- <div class="b2"><h2>B2</h2></div> -->
+     <section>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt perspiciatis, tempore hic suscipit incidunt, harum necessitatibus, modi corrupti eaque aut nemo delectus consectetur blanditiis voluptates accusamus aliquid odio. Voluptatum illum sequi ipsum adipisci odio.</p>
+     </section>
+</main>
+</body>
+</html>
